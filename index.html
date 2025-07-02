@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Janvi Jaivir Singh - Portfolio</title>
+    <meta name="description" content="Professional portfolio of Janvi Jaivir Singh - Computer Engineering Student & Developer">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Janvi Jaivir Singh</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-image-container">
+                    <div class="profile-image">
+                        <img src="/pictures/mypic.png" alt="Janvi Singh Profile" id="profile-img">
+                        <div class="profile-ring"></div>
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Janvi Jaivir Singh</span>
+                </h1>
+                <p class="hero-subtitle">DSA & DEVELOPMENT</p>
+                <p class="hero-description">
+                    Passionate about becoming a software developer and actively building MERN stack skills. 
+                    Strong interests in DSA, AI, and cloud technologies.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('experience')">
+                        View My Experience
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-resume" onclick="openResume()">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </button>
+                    
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        Get In Touch
+                    </button>
+                </div>
+                <div class="scroll-indicator" onclick="scrollToSection('about')">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    I am a determined and sincere individual who thrives on growing.<br>
+                    Competitive by nature, I actively explore new skills and dedicate myself to mastering them.<br>
+                    Enthusiastic to stay industry-ready.
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>My Story</h3>
+                    <p>
+                        I am a 3rd-year Computer Engineering student with a CGPA of 9.15. I have completed several 
+                        industry-recognized certifications, including Supervised Machine Learning and Advanced Learning 
+                        Algorithms by Andrew Ng (DeepLearning.AI), Career Essentials in Generative AI by Microsoft and 
+                        LinkedIn, and 19 certifications from Infosys Springboard in AI and emerging technologies.
+                    </p>
+                    <p>
+                        To apply my skills, I have participated in hackathons and project competitions, including an 
+                        international event at PICT Pune. 
+                    </p>
+                    <p>
+                        Outside academics, I enjoy sports like basketball, athletics, 
+                        swimming, and hold a black belt in karate. I am passionate about dance and often perform in 
+                        cultural events, while also taking on leadership roles in community activities.
+                    </p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, Maharashtra</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>3rd Year B.Tech CS</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-star"></i>
+                            <span>CGPA: 9.15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Skills & Technologies</h3>
+                    
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Web Technologies</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Tools & Technologies</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">Generative AI</span>
+                            <span class="skill-tag">Cloud Computing</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">MediaPipe</span>
+                            <span class="skill-tag">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Leadership</h2>
+                <p class="section-subtitle">
+                    My journey in leadership roles and community involvement that have shaped my professional growth.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <div class="job-info">
+                                <h3 class="job-title">Co-Lead</h3>
+                                <h4 class="company-name">Google Developers Groups (GDG)</h4>
+                            </div>
+                            <span class="job-period">Aug 2023 - Present</span>
+                        </div>
+                        <p class="job-description">
+                            Promoted community engagement by conducting outreach across multiple classes, driving awareness 
+                            and increasing active participation in the developer community.
+                        </p>
+                        <div class="achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Increased community participation through outreach</li>
+                                <li>Organized workshops and technical sessions</li>
+                                <li>Built a strong developer ecosystem</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <div class="job-info">
+                                <h3 class="job-title">Technical Head</h3>
+                                <h4 class="company-name">Computer Engineering Students Association (CESA)</h4>
+                            </div>
+                            <span class="job-period">Aug 2024 - Present</span>
+                        </div>
+                        <p class="job-description">
+                            Led the planning and execution of technical events, fostering innovation and skill development 
+                            within the department. Coordinated workshops and technical sessions for students.
+                        </p>
+                        <div class="achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Organized multiple technical workshops and events</li>
+                                <li>Fostered innovation within the department</li>
+                                <li>Enhanced skill development programs for students</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <div class="job-info">
+                                <h3 class="job-title">Management Volunteer</h3>
+                                <h4 class="company-name">GDSC WOW Pune</h4>
+                            </div>
+                            <span class="job-period">Apr 2024</span>
+                        </div>
+                        <p class="job-description">
+                            Contributed to large-scale event coordination, enhancing collaboration and execution within 
+                            a diverse student tech community.
+                        </p>
+                        <div class="achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Coordinated large-scale tech events</li>
+                                <li>Enhanced team collaboration and execution</li>
+                                <li>Built cross-campus networking connections</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    A showcase of my projects!
+                </p>
+            </div>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <!--<button class="filter-btn" data-filter="embedded">Embedded</button>-->
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="pictures/sentiment.jpg" alt="Sentiment Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/janvis11/Sentiment-Analysis-of-Articles" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <!--<a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sentiment Analysis Of Articles</h3>
+                        <p class="project-description">
+                            Designed a sentiment analysis model to classify news articles as positive, negative, or neutral using NLP techniques.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TextBlob</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="project-card" data-category="embedded">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Smart Helmet">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Helmet Ignition System</h3>
+                        <p class="project-description">
+                            Created a bike ignition system that activates only when the helmet is worn correctly, improving rider safety.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">IR Sensors</span>
+                            <span class="tech-tag">Embedded C</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="SignTalk ASL">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SignTalk - Real Time ASL Detection</h3>
+                        <p class="project-description">
+                            Built a real-time ASL gesture recognition system to convert hand signs into text, enabling intuitive communication.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="pictures/portfolio.png" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Professional Portfolio</h3>
+                        <p class="project-description">
+                            A responsive portfolio website built with modern web technologies and smooth animations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    I’m always open to new opportunities and engaging projects. Let’s connect and explore how we can collaborate to create something impactful together.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        If you’d like to discuss a project, collaborate, or just say hello, I’d love to hear from you. Feel free to reach out through any of the channels below.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>janvisingh6211@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9970746096</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, Maharashtra</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://leetcode.com/u/janvis11/" class="social-link" target="_blank">
+                            <i class="fa-solid fa-code"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/janvi-jaivir-singh/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/janvis11" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:janvisingh6211@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Send a Message</h3>
+                        <p>I'll get back to you as soon as possible.</p>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Janvi Jaivir Singh. Built with &hearts;</p>
+        </div>
+    </footer>
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="resume-modal">
+        <div class="resume-modal-content">
+            <div class="resume-modal-header">
+                <h3>Resume - Janvi Jaivir Singh</h3>
+                <div class="resume-modal-actions">
+                    <button class="btn btn-primary btn-sm" onclick="downloadResume()">
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </button>
+                    <button class="btn btn-secondary btn-sm" onclick="printResume()">
+                        <i class="fas fa-print"></i>
+                        Print
+                    </button>
+                    <button class="close-modal" onclick="closeResume()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="resume-content">
+                <iframe id="resume-iframe" src="/resume/Janvi_Singh_Resume.pdf" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
