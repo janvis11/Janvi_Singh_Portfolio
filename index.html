@@ -55,14 +55,17 @@
                         View My Experience
                         <i class="fas fa-arrow-right"></i>
                     </button>
-                    <button class="btn btn-resume" onclick="openResume()">
+
+                    <a href="/resume/Janvi_Jaivir_Singh_Resume.pdf" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                            View Resume
+                    </a>
+
+                    <button class="btn btn-resume" onclick="downloadResume()">
                         <i class="fas fa-download"></i>
                         Download Resume
                     </button>
                     
-                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
-                        Get In Touch
-                    </button>
                 </div>
                 <div class="scroll-indicator" onclick="scrollToSection('about')">
                     <i class="fas fa-chevron-down"></i>
@@ -475,30 +478,18 @@
         </div>
     </footer>
 
-    <!-- Resume Modal -->
-    <div id="resume-modal" class="resume-modal">
-        <div class="resume-modal-content">
-            <div class="resume-modal-header">
-                <h3>Resume - Janvi Jaivir Singh</h3>
-                <div class="resume-modal-actions">
-                    <button class="btn btn-primary btn-sm" onclick="downloadResume()">
-                        <i class="fas fa-download"></i>
-                        Download PDF
-                    </button>
-                    <button class="btn btn-secondary btn-sm" onclick="printResume()">
-                        <i class="fas fa-print"></i>
-                        Print
-                    </button>
-                    <button class="close-modal" onclick="closeResume()">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="resume-content">
-                <iframe id="resume-iframe" src="/resume/Janvi Singh Resume.pdf" frameborder="0"></iframe>
-            </div>
-        </div>
-    </div>
+     <!-- Download Resume Script -->
+    <script>
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = '/resume/Janvi_Jaivir_Singh_Resume.pdf';
+            link.download = 'Janvi Singh Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+    
 
     <script src="script.js"></script>
 </body>
