@@ -19,8 +19,8 @@
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>               
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="hamburger" id="hamburger">
@@ -163,6 +163,140 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    A showcase of my projects!
+                </p>
+            </div>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <!--<button class="filter-btn" data-filter="embedded">Embedded</button>-->
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="pictures/sentiment.jpg" alt="Sentiment Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/janvis11/Sentiment-Analysis-of-Articles" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <!--<a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sentiment Analysis Of Articles</h3>
+                        <p class="project-description">
+                            Designed a sentiment analysis model to classify news articles as positive, negative, or neutral using NLP techniques.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TextBlob</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="JS">
+                    <div class="project-image">
+                        <img src="pictures/musetab.png" alt="MuseTab">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/janvis11/MuseTab" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <!--<a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">🧠MuseTab: GPT Web Assistant</h3>
+                        <p class="project-description">
+                            A powerful browser extension that allows users to interact with webpage content using AI. Ask questions about any webpage and get intelligent answers powered by OpenAI's GPT-4.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Javascript</span>
+                            <span class="tech-tag">Manifest V3</span>
+                        </div>
+                    </div>
+                </div> 
+
+                <!--<div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="SignTalk ASL">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SignTalk - Real Time ASL Detection</h3>
+                        <p class="project-description">
+                            Built a real-time ASL gesture recognition system to convert hand signs into text, enabling intuitive communication.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="pictures/portfolio.png" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/janvis11/Janvi_Singh_Portfolio" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://janvi-singh-portfolio.vercel.app/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Professional Portfolio</h3>
+                        <p class="project-description">
+                            A responsive portfolio website built with modern web technologies and smooth animations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
@@ -254,139 +388,7 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">
-                    A showcase of my projects!
-                </p>
-            </div>
-
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="ai">AI/ML</button>
-                <!--<button class="filter-btn" data-filter="embedded">Embedded</button>-->
-                <button class="filter-btn" data-filter="web">Web</button>
-            </div>
-
-            <div class="projects-grid" id="projects-grid">
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <img src="pictures/sentiment.jpg" alt="Sentiment Analysis">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/janvis11/Sentiment-Analysis-of-Articles" class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <!--<a href="#" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sentiment Analysis Of Articles</h3>
-                        <p class="project-description">
-                            Designed a sentiment analysis model to classify news articles as positive, negative, or neutral using NLP techniques.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TextBlob</span>
-                            <span class="tech-tag">NLTK</span>
-                            <span class="tech-tag">Jupyter</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--<div class="project-card" data-category="embedded">
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=250&width=400" alt="Smart Helmet">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Smart Helmet Ignition System</h3>
-                        <p class="project-description">
-                            Created a bike ignition system that activates only when the helmet is worn correctly, improving rider safety.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Arduino</span>
-                            <span class="tech-tag">IR Sensors</span>
-                            <span class="tech-tag">Embedded C</span>
-                            <span class="tech-tag">IoT</span>
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=250&width=400" alt="SignTalk ASL">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">SignTalk - Real Time ASL Detection</h3>
-                        <p class="project-description">
-                            Built a real-time ASL gesture recognition system to convert hand signs into text, enabling intuitive communication.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">Flask</span>
-                        </div>
-                    </div>
-                </div> -->
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="pictures/portfolio.png" alt="Portfolio Website">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/janvis11/Janvi_Singh_Portfolio" class="project-link" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://janvi-singh-portfolio.vercel.app/" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Professional Portfolio</h3>
-                        <p class="project-description">
-                            A responsive portfolio website built with modern web technologies and smooth animations.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
